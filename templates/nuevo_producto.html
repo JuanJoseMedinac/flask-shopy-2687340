@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>nuevo producto:</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag()}}
+        <P>
+            {{ form.nombre.label }}
+            {{form.nombre(size=32)}}
+            
+            {{ form.nprecio.label }}
+            {{form.nprecio(size=32)}}
+        </P>
+        {{ form.submit()}}
+    </form>
+
+</body>
+</html>
